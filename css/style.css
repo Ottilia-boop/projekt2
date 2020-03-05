@@ -1,4 +1,9 @@
-body{
+
+/*Välkomst sidan*/
+body.val{
+    background-color:rgb(209, 192, 226);
+}
+#cont.val{
     background-color: rgb(209, 192, 226);
     display: grid;
     grid-template-areas: 
@@ -8,24 +13,39 @@ body{
     'ft ft ft ft';
 }
 
-header {
+@media only screen and (max-width: 600px) {
+    #cont.val {
+        display: grid;
+        width: 600px;
+        height: 100vh;
+        grid-template-areas: 
+        'hd hd'
+        'nv nv'
+        'mn mn'
+        'ft ft'
+    }
+}
+header.val {
     grid-area: hd;
     background-color: #381445;
     height: 75px;
 }
-#logga {
+#logga.val {
     height: 60px;
     width: 90px;
     border: 3px solid white; 
     border-radius: 5px;
 }
-nav {
+nav.val {
     grid-area: nv;
-    h1 { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;};
-    h2 { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 }
-
-main {
+h1.val { 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2.val {
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+main.val {
     grid-area: mn;
     margin: auto;
 }
@@ -36,21 +56,43 @@ main {
     height: 50px;
     width: 180px;
     border-radius: 5px;
-    
-}
-
-h3 { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    position:  absolute;
 }
 
-footer {
+h3.val { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer.val {
     grid-area: ft;
-    height: 40px;
-    background-color: #381445 ;
+    height: 140px;
+    background-color: rgb#381445 ;
 }
 
+/*Portfolio*/
+body .portf {
+    background-color:rgb(209, 192, 226);
+}
 
-
-
-
-
+#pof.portf {
+    display: grid;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'nv nv nv nv'
+    'mn mn mn mn'
+    'ft ft ft ft';
+}
+@media only screen and (max-width: 600px) {
+    #pof.portf {
+        display: grid;
+        width: 600px;
+        height: 100vh;
+        grid-template-areas: 
+        'hd hd'
+        'nv nv'
+        'mn mn'
+        'ft ft'
+    }
+}
