@@ -1,32 +1,68 @@
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color:rgb(209, 192, 226) ;
+}
+
 /*Hamburgare meny*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    background-color: #381445;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .hamb {
-    display: inline-block;
+    margin-right: 110px;
     cursor: pointer;
-    
 }
-.ham1, .ham2, .ham3 {
-    width: 35px;
+.hlink {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 95px;
+    height: 90vh;
+    top: -90vh;
+    background-color: #381445;
+    align-items: center;
+    width: 100px;
+    transition: all 1s;
+}
+.hActive {
+    transform: translateY(100vh);
+}
+.hlink li {
+    list-style: none;
+}
+.hlink a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.hamb div {
+    width: 40px;
     height: 5px;
-    background-color: rgb(255, 255, 255);
-    margin: 6px 0;
-    transition: 0.4s;
+    background-color: white;
+    margin: 5px;
+    border-radius: 15%;
+    transition: all 0.3s;
 }
-.change .ham1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+.toggel .ham1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
-.change .ham2 {
+.toggel .ham2 {
     opacity: 0;
 }
-.change .ham3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+.toggel .ham3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
+
 /*Välkomst sidan*/
-body.val{
-    background-color:rgb(209, 192, 226);
-}
 #cont.val{
     background-color: rgb(209, 192, 226);
     display: grid;
@@ -49,20 +85,14 @@ body.val{
         'ft ft'
     }
 }
-header.val {
-    grid-area: hd;
-    height: 180px;
-    padding: 20px;
-    display: block;
-    background-color: #381445;
-    width: 75px;
-}
+
 #logga.val {
     height: 60px;
     width: 90px;
     border: 3px solid white; 
     border-radius: 5px;
 }
+
 nav.val {
     grid-area: nv;
 }
