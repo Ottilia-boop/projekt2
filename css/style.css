@@ -1,4 +1,28 @@
 
+/*Hamburgare meny*/
+.hamb {
+    display: inline-block;
+    cursor: pointer;
+    
+}
+.ham1, .ham2, .ham3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .ham1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .ham2 {
+    opacity: 0;
+}
+.change .ham3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
 /*Välkomst sidan*/
 body.val{
     background-color:rgb(209, 192, 226);
@@ -27,8 +51,11 @@ body.val{
 }
 header.val {
     grid-area: hd;
+    height: 180px;
+    padding: 20px;
+    display: block;
     background-color: #381445;
-    height: 75px;
+    width: 75px;
 }
 #logga.val {
     height: 60px;
@@ -72,7 +99,7 @@ footer.val {
 }
 
 /*Portfolio*/
-body .portf {
+body.portf {
     background-color:rgb(209, 192, 226);
 }
 
