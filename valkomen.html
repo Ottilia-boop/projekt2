@@ -16,24 +16,38 @@
                 <li><a href="omm.html">Om mig</a></li>
                 <li><a href="ktk.html">Kontakta mig</a></li>
             </ul>
-
             <div class="hamb">
                 <div class="ham1"></div>
                 <div class="ham2"></div>
                 <div class="ham3"></div>
             </div>
-
-            <!--<img id="logga" src="img/ppff (kopia).jpg">-->
+            <a>
+                <img class="logga" src="img/ppff (kopia).jpg">
+            </a>
         </header>
         <nav>
             <!--Bildspel-->
-            <div id="bilds">
-                   <!-- <img id="slide" src="img/Stargeren pfp (kopia).jpg" style="width: 100%;">
-                    <img id="slide" src="img/Evesawain (kopia).jpg" style="width: 100%;">
-                    <img id="slide" src="img/Skärmavbild 2020-02-20 kl. 10.13.12.png" style="width: 100%;">
-                <button id="pilbac" onclick="plusDivs(-1)">&#10094;</button>
-                <button id="pilfrm" onclick="plusDivs(1)">&#10095;</button>-->
-            </div>
+            <div class="slideshow-c">
+                <div class="mySlides-f">
+                    <img src="img/Evesawain (kopia).jpg" style="width: 100%;">
+                </div>
+                <div class="mySlides-f">
+                    <img src="img/Stargeren pfp (kopia).jpg"style="width: 100%;">
+                </div>
+                <div class="mySlides-f">
+                    <img src="img/Temooyuumi (kopia).jpg"style="width: 100%;">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides (1)">&#10095</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                  </div>
+
+            
             <h1>Välkommen</h1>
             <h2 style="color: white;">Framtida Graphic design, Graphic recorder och konstnär</h2>
         </nav>
@@ -44,7 +58,8 @@
                 </a>
         </article>
         </main>
-        <footer>    
+        <footer>   
+            <p> </p> 
         </footer>
     </div> 
     <script src="js/valkomen.js"></script>
