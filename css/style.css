@@ -10,6 +10,7 @@ footer {
     display: block;
     height: 140px;
     background-color: rgb#381445 ;
+    position: fixed;
 }
 
 /*Hamburgare meny*/
@@ -20,6 +21,8 @@ header {
     height: 10vh;
     background-color: #381445;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
 }
 
 a {
@@ -28,10 +31,13 @@ a {
 
 .logga {
     height: 50px;
-    width: 80px;
+    width: 60px;
     margin: auto;
     border-radius: 10px;
     border: solid 1px rgb(209, 192, 226);
+    position: relative;
+    right: 250px;
+
 }
 .hamb {
     margin-right: 110px;
@@ -136,7 +142,11 @@ main.val {
     width: 180px;
     border-radius: 5px;
     text-align: center;
-    position:  absolute;
+    margin-left: 200;
+}
+
+.portb {
+
 }
 
 h3.val { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -222,5 +232,28 @@ body.portf {
         'nv nv'
         'mn mn'
         'ft ft'
-    }
+    } 
+}
+.fa {
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    background-color:#9973C5 opacity60%;
+    border:solid 5px white;
+    border-radius: 4%;
+    position: absolute;
+    width: 195px;
+    height: 40px;
+
+
+}
+.ikon {
+    display: block;
+    height: 195px;
+    width: 195px;
+    border-radius: 4%;
+    border: solid 5px white;
+    
 }
