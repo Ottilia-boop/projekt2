@@ -7,10 +7,16 @@
 }
 footer {
     grid-area: ft;
-    display: block;
-    height: 140px;
-    background-color: rgb#381445 ;
-    position: fixed;
+    background-color: #381445;
+}
+
+.border {
+    background-color: #381445;
+    width: 100%;
+    height: 20px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
 }
 
 /*Hamburgare meny*/
@@ -21,8 +27,6 @@ header {
     height: 10vh;
     background-color: #381445;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
 }
 
 a {
@@ -31,12 +35,12 @@ a {
 
 .logga {
     height: 50px;
-    width: 60px;
+    width: 75px;
     margin: auto;
     border-radius: 10px;
-    border: solid 1px rgb(209, 192, 226);
+    background-color: #381445;
     position: relative;
-    right: 250px;
+    right: 205px;
 
 }
 .hamb {
@@ -90,19 +94,9 @@ a {
 }
 
 /*Välkomst sidan*/
-#cont.val{
-    background-color: rgb(209, 192, 226);
-    display: grid;
-    grid-template-areas: 
-    'hd hd hd hd'
-    'nv nv nv nv'
-    'mn mn mn mn'
-    'ft ft ft ft';
-}
-
 @media only screen and (max-width: 600px) {
-    .prev, .next {font-size: 22px}
     #cont.val {
+        background-color: rgb(209, 192, 226);
         display: grid;
         width: 600px;
         height: 100vh;
@@ -124,96 +118,61 @@ a {
 nav.val {
     grid-area: nv;
 }
-h1.val { 
+.välkom { 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline overline white;
 }
-h2.val {
-         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
 main.val {
     grid-area: mn;
     margin: auto;
 }
 #port {
-    opacity: 60%;
-    background-color:#9973C5 ;
+    background-color:#9973C5;
     border: 4px solid white;
+    opacity: 85%;
     height: 50px;
     width: 180px;
     border-radius: 5px;
     text-align: center;
-    margin-left: 200;
+    position: absolute;
+    right: 160px;
+    top: 580px
 }
 
-.portb {
-
-}
-
-h3.val { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
+.text {
+    color: white;
     text-decoration: none;
-    background-color:#9973C5 opacity: 60%;
+    background-color:#9973C5;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.pot {
+    height: 200px;
+    width: 100%;
+}
+
+.fram {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 57px;
+    background-color: #381445;
+}
+.push {
+    background-color: #381445;
+    font-size: 24px;
+}
+
 
 .mySlides {display: none}
 
-.slideshow-c {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  .prev:hover, .next:hover {
-    background-color: rgb(191, 172, 211);
-  }
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-
-
 /*Portfolio*/
 body.portf {
-    background-color:rgb(209, 192, 226);
-}
 
+}
 #pof.portf {
     display: grid;
     grid-template-areas: 
@@ -240,20 +199,119 @@ body.portf {
     text-decoration: none;
     text-align: center;
     font-size: 26px;
-    background-color:#9973C5 opacity60%;
+    color: white;
+    background-color:#9973C5;
+    opacity: 85%;
     border:solid 5px white;
     border-radius: 4%;
     position: absolute;
+    right:152px;
     width: 195px;
     height: 40px;
-
-
+}
+.ps {
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    background-color:#9973C5;
+    opacity: 85%;
+    border:solid 5px white;
+    border-radius: 4%;
+    position: absolute;
+    right:152px;
+    width: 195px;
+    height: 40px;
+}
+.eg {
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    background-color:#9973C5;
+    opacity: 85%;
+    border:solid 5px white;
+    border-radius: 4%;
+    position: absolute;
+    right:152px;
+    width: 195px;
+    height: 40px;
+}
+.se {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    background-color:#9973C5;
+    opacity: 85%;
+    border:solid 5px white;
+    border-radius: 4%;
+    position: absolute;
+    width: 100%;
+    height: 40px; 
 }
 .ikon {
     display: block;
     height: 195px;
     width: 195px;
-    border-radius: 4%;
+    border-radius: 1%;
     border: solid 5px white;
+    margin: auto;
     
+}
+.ikonl {
+    display: block;
+    height: 205px;
+    width: 100%;
+}
+/*om mig*/
+
+.om {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-decoration: overline underline;
+}
+
+.omt {
+    background-color: #9973C5;
+    color: white;
+    border: solid 2px rgb(159, 125, 197);
+    border-radius: 1%;
+
+}
+
+.me {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+
+/*Kontakta mig*/
+
+.ktp {
+    height: auto;
+    width: 100%;
+    border: solid white 2px;
+}
+.kont {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+
+}
+.iko {
+    background-color: #9973C5;
+    width: 80px;
+    height: auto;
+}
+.konta {
+    background-color: #9973C5;
+    text-align: center;    
 }
